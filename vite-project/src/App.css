@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -73,9 +77,13 @@ nav {
 	margin-top: -50px;
 }
 
+.heroshotContainer {
+	display: flex;
+}
+
 .card-img-one {
 	padding: 4em;
-	border-radius: 85px !important;
+	border-radius: 80px !important;
 }
 
 .soldout {
@@ -92,7 +100,7 @@ nav {
 	display: flex;
 	align-items: baseline;
 	position: absolute;
-	top: 810px;
+	top: 790px;
 	left: 62px;
 }
 
@@ -108,7 +116,7 @@ nav {
 
 .card-description {
 	position: absolute;
-	top: 830px;
+	top: 810px;
 	left: 62px;
 }
 

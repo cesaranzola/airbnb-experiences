@@ -1,7 +1,7 @@
 export default function Cards(props) {
 	return (
 		<div className="card--one">
-			<div>
+			<div className="heroshotContainer">
 				<img className="card-img-one" src={props.img} alt="" />
 				<h4 className="soldout">{props.sell}</h4>
 			</div>
