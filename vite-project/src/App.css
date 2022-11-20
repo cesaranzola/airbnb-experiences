@@ -36,7 +36,7 @@ section {
 }
 
 .hero--photo {
-	max-width: 400px;
+	max-width: 300px;
 	align-self: center;
 }
 
@@ -53,6 +53,7 @@ section {
 	flex-wrap: nowrap;
 	gap: 20px;
 	overflow-x: auto;
+	margin-top: -1em;
 }
 
 .card {
@@ -96,6 +97,60 @@ section {
 	left: 6px;
 	background-color: white;
 	padding: 5px 7px;
-	border-radius: 2px;
-	font-weight: bold;
+	border-radius: 5px;
+	font-weight: 300;
+}
+
+@media (min-width: 700px) {
+	.hero--photo {
+		max-width: 600px;
+		align-self: center;
+	}
+	.cards-list {
+		display: flex;
+		justify-content: center;
+	}
+	.hero--header {
+		align-self: center;
+	}
+	.hero--text {
+		align-self: center;
+		width: 550px;
+	}
+}
+
+@media (min-width: 900px) {
+	.hero--photo {
+		margin-top: 2em;
+		margin-bottom: 2em;
+		max-width: 900px;
+		align-self: center;
+	}
+	.cards-list {
+		display: flex;
+		justify-content: center;
+	}
+	.hero--header {
+		align-self: center;
+	}
+	.hero--text {
+		align-self: center;
+		width: 800px;
+		font-size: 2rem;
+		font-weight: 400;
+	}
+	.hero--header {
+		font-size: 3rem;
+	}
+	.card {
+		width: 380px;
+		font-size: 0.9em;
+		flex: 0 0 auto; /* ADD */
+		display: flex; /* ADD */
+		flex-direction: column; /* ADD */
+		position: relative;
+	}
+	.nav--logo {
+		width: 150px;
+	}
 }
