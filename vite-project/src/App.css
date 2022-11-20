@@ -44,7 +44,7 @@ nav {
 }
 
 .gridImage {
-	width: 300px;
+	width: 330px;
 }
 
 /* Online experiences */
@@ -74,63 +74,66 @@ nav {
 .card--one {
 	display: flex;
 	flex-direction: column;
-	margin-top: -50px;
-}
-
-.heroshotContainer {
-	display: flex;
+	align-items: center;
+	margin-top: -2.8em;
 }
 
 .card-img-one {
 	padding: 4em;
-	border-radius: 80px !important;
+	border-radius: 80px;
+	margin-bottom: 0;
 }
 
-.soldout {
-	position: absolute;
-	top: 460px;
-	left: 80px;
-	background-color: white;
-	padding: 0.2em;
-	border-radius: 5px;
-	font-weight: 300;
-}
-
-.stars {
-	display: flex;
-	align-items: baseline;
-	position: absolute;
-	top: 790px;
-	left: 62px;
-}
-
-.stars-title {
-	font-size: 0.75em;
-	font-weight: 300;
+.star-img,
+.stars-title,
+.grey {
+	display: inline-block;
 }
 
 .star-img {
-	height: 12px;
-	margin-right: 0.3em;
+	height: 0.8em;
+	margin-right: 0.2em;
 }
 
-.card-description {
-	position: absolute;
-	top: 810px;
-	left: 62px;
+.stars {
+	margin-top: -5em;
+	margin-bottom: -1.8em;
 }
 
-.title-offer {
-	font-weight: 300;
-	font-size: 0.75em;
-	margin: 0;
-	padding: 0;
+.details {
+	margin-left: 4.2em;
 }
 
 .one {
-	margin-top: 1.2em;
+	margin-bottom: -1em;
+}
+
+.title-offer {
+	font-size: 0.75em;
+	font-weight: 300;
+}
+
+.rating {
+	margin-left: 0.3em;
+	margin-right: 0.3em;
 }
 
 .two {
 	font-weight: bold;
+}
+
+.containerImg {
+	position: relative;
+}
+
+.soldout {
+	position: absolute;
+	top: 80px;
+	left: 80px;
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 0.4em;
+	font-weight: 300;
+	font-size: 0.75em;
+	text-align: center;
 }

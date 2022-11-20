@@ -1,4 +1,4 @@
-import heroImage from './assets/photo-grid.png';
+import heroImage from '../public/images/photo-grid.png';
 
 export default function MainContent() {
 	return (
