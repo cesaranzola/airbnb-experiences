@@ -7,7 +7,7 @@ import star from '../public/images/star.png';
 
 function App() {
 	const cardEle = data.map((item) => {
-		return <Cards id={item.id} item={item} star={star} />;
+		return <Cards id={item.id} {...item} star={star} />;
 	});
 	return (
 		<div className="App">

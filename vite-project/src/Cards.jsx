@@ -13,7 +13,7 @@ export default function Cards(props) {
 					{badgeText && <span className="soldout"> {badgeText}</span>}
 					<img
 						className="card-img-one"
-						src={`../public/images/${props.item.coverImg}`}
+						src={`../public/images/${props.coverImg}`}
 						alt=""
 					/>
 				</div>
@@ -22,17 +22,17 @@ export default function Cards(props) {
 					<div className="stars">
 						<img className="star-img" src={props.star} alt="" />
 						<h4 className="stars-title title-offer rating">
-							{props.item.stats.rating}
+							{props.stats.rating}
 						</h4>
 						<h4 className="grey title-offer ">
-							({props.item.stats.reviewCount}) • {props.item.location}
+							({props.stats.reviewCount}) • {props.location}
 						</h4>
 					</div>
 
 					<div className="card-description">
-						<h4 className="title-offer one">{props.item.title}</h4>
+						<h4 className="title-offer one">{props.title}</h4>
 						<h4 className="title-offer">
-							<span className="two">${props.item.price}</span> / per
+							<span className="two">${props.price}</span> / per
 							person
 						</h4>
 					</div>
