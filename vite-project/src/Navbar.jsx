@@ -1,9 +1,11 @@
 import AirbnbLogo from '../public/images/airbnb-logo.png';
 
+import React from 'react';
+
 export default function Navbar() {
 	return (
 		<nav>
-			<img  className='logo' src={AirbnbLogo} alt="" />
+			<img src="../images/airbnb-logo.png" className="nav--logo" />
 		</nav>
 	);
 }

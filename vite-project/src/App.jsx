@@ -1,21 +1,20 @@
 import './App.css';
 import Navbar from './Navbar';
-import MainContent from './MainContent';
+import Hero from './Hero';
 import Cards from './Cards';
 import data from './data';
 import star from '../public/images/star.png';
 
-function App() {
-	const cardEle = data.map((item) => {
-		return <Cards id={item.id} {...item} star={star} />;
+export default function App() {
+	const cards = data.map((item) => {
+		return <Cards key={item.id} {...item} star={star} />;
 	});
+
 	return (
-		<div className="App">
+		<div>
 			<Navbar />
-			<MainContent />
-			{cardEle}
+			<Hero />
+			<section className="cards-list">{cards}</section>
 		</div>
 	);
 }
-
-export default App;
